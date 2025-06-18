@@ -775,7 +775,7 @@ class Game {
     createCoin() {
         const coinElement = document.createElement('div');
         coinElement.className = 'coin';
-        coinElement.innerHTML = '🍣'; // Используем эмодзи суши
+        coinElement.innerHTML = '🥟'; // Используем эмодзи хинкали вместо суши
         const lane = Math.floor(Math.random() * this.laneRatios.length);
         coinElement.style.left = `${this.laneRatios[lane] * 100}%`;
         const initialY = 0; 
