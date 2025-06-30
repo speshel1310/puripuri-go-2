@@ -801,7 +801,7 @@ class Game {
                 continue;
             }
 
-            obstacleObj.y += 4; // Speed of obstacle, обновляем сохраненную координату
+            obstacleObj.y += 3.5; // Speed of obstacle, обновляем сохраненную координату
             obstacleElement.style.transform = `translateY(${obstacleObj.y}px)`; // Новый, CSS уже отцентрировал
 
             if (obstacleObj.y > this.gameArea.offsetHeight) {
@@ -823,7 +823,7 @@ class Game {
                 continue;
             }
 
-            coinObj.y += 3; // Speed of coin, обновляем сохраненную координату
+            coinObj.y += 2.5; // Speed of coin, обновляем сохраненную координату
             coinElement.style.transform = `translateY(${coinObj.y}px)`; // Новый, CSS уже отцентрировал
 
             if (coinObj.y > this.gameArea.offsetHeight) {
